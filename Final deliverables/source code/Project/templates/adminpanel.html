@@ -1,0 +1,69 @@
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Add item</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <style>
+    .space{
+      padding-left: 520px;
+    }
+    .row{
+      margin-left: 140px;
+      margin-top: 200px;
+    }
+
+  </style>
+</head>
+<body background= "{{url_for('static', filename='bg.png')}}"  >
+  <li class="col-sm-6"><a href="/" class="btn form-control btn-success">HOME</a></li>
+  <div class="space">
+    <div class="container">
+      <h3>{{ msg }}</h3>
+        <div class="row" >
+            <div class="col-sm-6">
+              <form action = "{{ url_for('adminpanel') }}" method = "POST">
+               
+                   <br> <div class="form-group">
+                    
+                      <label for="id">  PRODUCT ID  : </label>
+                      
+                      <input type = "number" name='id' class="form-control" id="password">
+                    
+                  </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                      <label for="name">  PRODUCT NAME  : </label>
+                      
+                      <input type = "text" name='name' class="form-control" id="password">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                      <label for="price">PRICE : </label>
+                      <input type = "number" name='price' class="form-control" id="password">
+                      <br>
+                      <br>
+                      <div class="form-group">
+                        <label for="stock">STOCK : </label>
+                        <input type = "number" name='stock' class="form-control" id="password">
+                    </div><br>
+                    <br>
+                    <button type="submit" class="btn form-control btn-default">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>

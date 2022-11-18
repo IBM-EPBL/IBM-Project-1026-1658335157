@@ -1,0 +1,73 @@
+body{
+    background-image: url("bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.header{
+    display: flex; 
+    padding-left: 10px;
+    
+}
+.space{
+    padding-left: 1030px;
+}
+.title{
+    font-size: 65px;
+    padding-left: 10px;
+}
+.title1{
+    font-size: 40px;
+    padding-left: 10px;
+}
+.about , .about1 , .about2 , .about3{
+    font-size: 25px;
+} 
+.margin ,  .acc_icon {
+    height: 160px;
+}
+.search_div{
+    background: #2d3239;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    
+}
+.search_input{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+
+}
+.search_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2862cc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #2d3239;
+    transition: 0.4s;
+    text-decoration: none;
+
+}
+.search_div:hover > .search_input{
+    width: 240px;
+    padding: 0.6px;
+    top: 50px;
+}
+.search_div:hover > .search_button{
+    background: #fff;
+}
+.cart_icon , .acc_icon{
+    width: 60px;
+    height: 60px;
+}

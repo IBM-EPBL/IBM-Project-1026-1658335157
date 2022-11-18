@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>Inventory Management</title>
+ </head>
+ <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Register</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ <body>
+<h2>ECEMART</h2>
+<h3>{{ msg }}</h3>
+<background="bg.png">
+    <li class="col-sm-6"><a href="/" class="btn form-control btn-success">HOME</a></li>
+    <li class="col-sm-6"><a href="/adminnotify" class="btn form-control btn-primary">Notify Out of Stock</a></li>
+<div class="table-wrapper">
+
+    
+
+    <table class="fl-table">
+        <form action = "{{ url_for('adminpanel') }}" method = "POST"></form>
+        <thead>
+        <tr>
+            <th>PRODUCT_ID</th>
+            <th>PRODUCT_NAME</th>
+            <th>PRODUCT_PRICE</th>
+            <th>PRODUCT_STOCK</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+
+            <tr>
+                <td>10</td>
+                <td>CPU</td>
+                <td>10000</td>
+                <td>10</td>
+                
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Headset</td>
+                <td>1500</td>
+                <td>5</td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mouse</td>
+                <td>100</td>
+                <td>2</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Joystick</td>
+                <td>2000</td>
+                <td>10</td>
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pendrive</td>
+                <td>300</td>
+                <td>10</td>
+                
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Harddisk</td>
+                <td>4000</td>
+                <td>10</td>
+                
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>UPS</td>
+                <td>5000</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Monitor</td>
+                <td>8000</td>
+                <td>5</td>
+            </tr>
+        <tbody>
+            
+           
+        </form>
+        
+    </table>
+</div>
+</body>
+</html>
